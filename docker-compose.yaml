@@ -1,0 +1,9 @@
+services:
+  cakeshopdb:
+    image: mongo:5.0.0
+    container_name: cakeshop-database
+    ports:
+      - 27017:27016
+    volumes:
+      - ./mongo:/data/db
+      - ./backend/productImages:/data/productImages:rw

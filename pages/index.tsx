@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 
 import { Layout } from "../components/layout";
-import { Carousel } from "../components/ui";
+import { Carousel, Footer } from "../components/ui";
 import { BAKERY_OPTIONS } from "../utils";
 
 export default function HomePage() {
@@ -354,6 +354,8 @@ export default function HomePage() {
 
         <Carousel iconSelected={iconSelected} />
       </section>
+
+      <Footer />
     </Layout>
   );
 }

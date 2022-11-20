@@ -15,10 +15,10 @@ export const Navbar = () => {
         <nav>
           <ul className="nav">
             <li className="nav__item">
-              <Link href="#">Home</Link>
+              <Link href="/">Home</Link>
             </li>
             <li className="nav__item">
-              <Link href="#">Ready to go</Link>
+              <Link href="stock">Ready to go</Link>
             </li>
             <li className="nav__item">
               <Link href="#">Order</Link>

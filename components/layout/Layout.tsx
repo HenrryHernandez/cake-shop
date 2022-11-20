@@ -1,6 +1,7 @@
 import { FC, ReactNode } from "react";
 import Head from "next/head";
 import Script from "next/script";
+import Link from "next/link";
 
 import { Footer, Navbar } from "../ui";
 
@@ -25,12 +26,15 @@ export const Layout: FC<Props> = ({ children, title }) => {
       </Head>
 
       <Script src="https://kit.fontawesome.com/bfe5530393.js" />
+      <Script
+        src="https://kit.fontawesome.com/bfe5530393.js"
+        crossOrigin="anonymous"
+      />
+      <Link href="/dist/output.css" rel="stylesheet" />
 
       <Navbar />
 
       <main>{children}</main>
-
-      <Footer />
     </>
   );
 };
