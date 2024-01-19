@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+import Image from "next/image";
 
 import { Layout } from "../components/layout";
 import { Carousel, Footer } from "../components/ui";
@@ -38,57 +39,49 @@ export default function HomePage() {
 
   return (
     <Layout>
-      <section className="sec-1">
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate
-          saepe, quia, quod est beatae natus non temporibus quos recusandae vero
-          quaerat necessitatibus veritatis at earum eos quo id consectetur
-          placeat culpa perferendis dicta illo illum hic! Laudantium id quos
-          amet, repellat harum, rerum, aut ut ratione tempore assumenda modi ex.
-        </p>
+      <section className="w-full col-center px-8 pt-16 lg:pt-32 lg:pb-16 sm:px-16 bg-pink-10">
+        <div className="max-w-xl h-full col-center gap-y-12">
+          <h1 className="text-white text-4xl md:text-6xl font-bold">
+            Cake Shop
+          </h1>
+          <p className="sm:text-2xl text-center text-white">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate
+            saepe, quia, quod est beatae natus non temporibus quos recusandae
+            vero quaerat necessitatibus veritatis at earum eos quo id
+            consectetur placeat culpa perferendis dicta illo illum hic!
+            Laudantium id quos amet, repellat harum, rerum, aut ut ratione
+            tempore assumenda modi ex. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Modi, voluptatem atque nihil consequatur maiores
+            dolorum deleniti quo repudiandae alias fuga!
+          </p>
+        </div>
       </section>
 
-      <div className="waves-container">
-        <div className="waves-subcontainer">
-          <div className="wave">
-            <svg id="visual" viewBox="0 0 900 80">
-              <path
-                d="M0 69L25 68.2C50 67.3 100 65.7 150 67C200 68.3 250 72.7 300 75.3C350 78 400 79 450 78.2C500 77.3 550 74.7 600 73.8C650 73 700 74 750 73.5C800 73 850 71 875 70L900 69L900 0L875 0C850 0 800 0 750 0C700 0 650 0 600 0C550 0 500 0 450 0C400 0 350 0 300 0C250 0 200 0 150 0C100 0 50 0 25 0L0 0Z"
-                fill="#F073A1"
-              ></path>
-              <path
-                d="M0 52L25 52C50 52 100 52 150 53C200 54 250 56 300 56.3C350 56.7 400 55.3 450 54.8C500 54.3 550 54.7 600 54.2C650 53.7 700 52.3 750 53C800 53.7 890 52.3 825 53.7L900 52L900 0L875 0C850 0 800 0 750 0C700 0 650 0 600 0C550 0 500 0 450 0C400 0 350 0 300 0C250 0 200 0 150 0C100 0 50 0 25 0L0 0Z"
-                fill="#EF6D90"
-              ></path>
-              <path
-                d="M0 41L25 41.3C50 41.7 100 42.3 150 42.2C200 42 250 41 300 41.2C350 41.3 400 42.7 450 41.8C500 41 550 38 600 36.7C650 35.3 700 35.7 750 36C600 36.3 850 36.7 775 36.8L900 41L900 0L875 0C850 0 800 0 750 0C700 0 650 0 600 0C550 0 500 0 450 0C400 0 350 0 300 0C250 0 200 0 150 0C100 0 50 0 25 0L0 0Z"
-                fill="#EE6681"
-              ></path>
-              <path
-                d="M0 20L225 18.3C50 18.7 100 19.3 150 19.8C200 20.3 250 20.7 300 20.8C350 21 400 21 450 21C500 21 550 21 600 21.3C650 21.7 700 22.3 750 22C800 21.7 850 20.3 875 19.7L900 20L900 0L875 0C850 0 800 0 750 0C700 0 650 0 600 0C550 0 500 0 450 0C400 0 350 0 300 0C250 0 200 0 150 0C100 0 50 0 25 0L0 0Z"
-                fill="#ed546e"
-              ></path>
-            </svg>
+      <div className="waves-container w-full">
+        <div className="waves-subcontainer w-full h-80">
+          <div className="wave h-full w-full">
+            <Image
+              src="/wave.svg"
+              alt="wave"
+              width={100}
+              height={100}
+              style={{
+                width: "100%",
+                height: "100%",
+              }}
+            />
           </div>
-          <div className="wave">
-            <svg id="visual" viewBox="0 0 900 80" version="1.1">
-              <path
-                d="M0 69L25 68.2C50 67.3 100 65.7 150 67C200 68.3 250 72.7 300 75.3C350 78 400 79 450 78.2C500 77.3 550 74.7 600 73.8C650 73 700 74 750 73.5C800 73 850 71 875 70L900 69L900 0L875 0C850 0 800 0 750 0C700 0 650 0 600 0C550 0 500 0 450 0C400 0 350 0 300 0C250 0 200 0 150 0C100 0 50 0 25 0L0 0Z"
-                fill="#F073A1"
-              ></path>
-              <path
-                d="M0 52L25 52C50 52 100 52 150 53C200 54 250 56 300 56.3C350 56.7 400 55.3 450 54.8C500 54.3 550 54.7 600 54.2C650 53.7 700 52.3 750 53C800 53.7 890 52.3 825 53.7L900 52L900 0L875 0C850 0 800 0 750 0C700 0 650 0 600 0C550 0 500 0 450 0C400 0 350 0 300 0C250 0 200 0 150 0C100 0 50 0 25 0L0 0Z"
-                fill="#EF6D90"
-              ></path>
-              <path
-                d="M0 41L25 41.3C50 41.7 100 42.3 150 42.2C200 42 250 41 300 41.2C350 41.3 400 42.7 450 41.8C500 41 550 38 600 36.7C650 35.3 700 35.7 750 36C600 36.3 850 36.7 775 36.8L900 41L900 0L875 0C850 0 800 0 750 0C700 0 650 0 600 0C550 0 500 0 450 0C400 0 350 0 300 0C250 0 200 0 150 0C100 0 50 0 25 0L0 0Z"
-                fill="#EE6681"
-              ></path>
-              <path
-                d="M0 20L225 18.3C50 18.7 100 19.3 150 19.8C200 20.3 250 20.7 300 20.8C350 21 400 21 450 21C500 21 550 21 600 21.3C650 21.7 700 22.3 750 22C800 21.7 850 20.3 875 19.7L900 20L900 0L875 0C850 0 800 0 750 0C700 0 650 0 600 0C550 0 500 0 450 0C400 0 350 0 300 0C250 0 200 0 150 0C100 0 50 0 25 0L0 0Z"
-                fill="#ed546e"
-              ></path>
-            </svg>
+          <div className="wave h-full w-full">
+            <Image
+              src="/wave.svg"
+              alt="wave"
+              width={100}
+              height={100}
+              style={{
+                width: "100%",
+                height: "100%",
+              }}
+            />
           </div>
         </div>
       </div>
