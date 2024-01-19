@@ -6,28 +6,31 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    colors: {
-      transparent: "transparent",
-      current: "currentColor",
-      original: "#ed546e",
-      "grey-high": "#8d8d8d",
-      "grey-medium": "#e7e7e7",
-      "grey-high": "#eaeaea",
-      black: "#000",
-      white: "#fff",
-    },
-    screens: {
-      phone: "440px",
-      // => @media (min-width: 640px) { ... }
-
-      tablet: "768px",
-      // => @media (min-width: 768px) { ... }
-
-      laptop: "1024px",
-      // => @media (min-width: 1024px) { ... }
-
-      screen: "1280px",
-      // => @media (min-width: 1280px) { ... }
+    extend: {
+      backgroundColor: {
+        red: "#f00",
+        blue: "#00f",
+        green: "#0f0",
+        pink: "#f0f",
+        cyan: "#0ff",
+        yellow: "#ff0",
+      },
+      colors: {
+        red: "#f00",
+        blue: "#00f",
+        green: "#0f0",
+        pink: "#f0f",
+        cyan: "#0ff",
+        yellow: "#ff0",
+        transparent: "transparent",
+        current: "currentColor",
+        original: "#ed546e",
+        "grey-high": "#8d8d8d",
+        "grey-medium": "#e7e7e7",
+        "grey-high": "#eaeaea",
+        black: "#000",
+        white: "#fff",
+      },
     },
   },
   plugins: [],
