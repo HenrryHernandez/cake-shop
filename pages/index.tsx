@@ -94,7 +94,7 @@ export default function HomePage() {
       </div>
 
       <section className="sec-2">
-        <h1>Some of our craft</h1>
+        <h1 className="text-5xl">Some of our craft</h1>
 
         <div className="icons">
           <div
