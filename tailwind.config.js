@@ -14,6 +14,11 @@ module.exports = {
         pink: "#f0f",
         cyan: "#0ff",
         yellow: "#ff0",
+        "pink-5": "#d93d4a",
+        "pink-10": "#ed546e",
+        "pink-20": "#EE6681",
+        "pink-30": "#EF6D90",
+        "pink-40": "#F073A1",
       },
       colors: {
         red: "#f00",
