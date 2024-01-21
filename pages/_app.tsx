@@ -1,7 +1,7 @@
 import type { AppProps } from "next/app";
 
 import "../styles/globals.css";
-import "../styles/Homepage.css";
+import "../styles/HomePage.css";
 import "../styles/components/ui/Footer.css";
 import "../styles/components/ui/Navbar.css";
 
