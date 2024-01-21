@@ -8,7 +8,7 @@ interface Props {
 }
 
 export const Carousel = ({ iconSelected }: Props) => {
-  const IMAGES_CHUNK_SIZE = 9;
+  const IMAGES_CHUNK_SIZE = 6;
 
   const [currentImages, setCurrentImages] = useState<string[]>([]);
   const [currentImagesOffset, setCurrentImagesOffset] = useState(0);
