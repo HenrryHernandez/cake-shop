@@ -16,7 +16,7 @@ export const Navbar = () => {
     <header className="z-10 relative">
       <Image
         alt="Next.js logo"
-        src="/../public/images/logo.png"
+        src="/images/logo.png"
         width={1200}
         height={400}
         className="logo"
