@@ -39,9 +39,9 @@ export const Navbar = () => {
 
       {/* MOBILE */}
       <div className="h-full md:hidden row-center px-8">
-        <button className="row-center" onClick={handleClick}>
+        <div className="row-center w-6 h-6" onClick={handleClick}>
           <FontAwesomeIcon className="text-xl text-white" icon={faBars} />
-        </button>
+        </div>
       </div>
 
       {isDropdownOpen && (
