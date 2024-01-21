@@ -1,9 +1,15 @@
 import { useRef, useState } from "react";
 import Image from "next/image";
 
-import { CakeIcon, CupcakeIcon, DonutIcon, PieIcon } from "../components";
-import { Layout } from "../components/layout";
-import { Carousel, Footer } from "../components/ui";
+import {
+  CakeIcon,
+  Carousel,
+  CupcakeIcon,
+  DonutIcon,
+  Footer,
+  Layout,
+  PieIcon,
+} from "../components";
 import { BAKERY_OPTIONS } from "../utils";
 
 export default function HomePage() {
