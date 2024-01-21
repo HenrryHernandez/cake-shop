@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import Image from "next/image";
 
+import { CakeIcon, CupcakeIcon, DonutIcon, PieIcon } from "../components";
 import { Layout } from "../components/layout";
 import { Carousel, Footer } from "../components/ui";
 import { BAKERY_OPTIONS } from "../utils";
@@ -87,32 +88,38 @@ export default function HomePage() {
       </div>
 
       <section className="w-full col-center gap-y-8 my-32">
-        <h2 className="text-5xl text-pink-10 text-center">Some of our craft</h2>
+        <h2 className="px-2 sm:px-0 text-4xl sm:text-5xl text-pink-10 text-center">
+          Some of our craft
+        </h2>
 
-        <div className="bg-blue max-w-6xl w-full h-32 gap-x-8 px-8 row-center">
-          <div className="w-1/4 h-full bg-red">
-            <button
-              className="w-full h-full bg-black"
-              onClick={() => selectIcon(BAKERY_OPTIONS.CAKE)}
-            ></button>
+        <div className="w-full w-full gap-x-8 lg:gap-x-16 xl:gap-x-32 px-8 row-center flex-wrap flex">
+          <div
+            ref={cakeIcon}
+            className="w-20 h-20 sm:w-24 sm:h-24 xl:w-32 xl:h-32 sec-2 underline"
+            onClick={() => selectIcon(BAKERY_OPTIONS.CAKE)}
+          >
+            <CakeIcon />
           </div>
-          <div className="w-1/4 h-full bg-red">
-            <button
-              className="w-full h-full bg-black"
-              onClick={() => selectIcon(BAKERY_OPTIONS.CUPCAKE)}
-            ></button>
+          <div
+            ref={cupcakeIcon}
+            className="w-20 h-20 sm:w-24 sm:h-24 xl:w-32 xl:h-32 mb-4 sec-2"
+            onClick={() => selectIcon(BAKERY_OPTIONS.CUPCAKE)}
+          >
+            <CupcakeIcon />
           </div>
-          <div className="w-1/4 h-full bg-red">
-            <button
-              className="w-full h-full bg-black"
-              onClick={() => selectIcon(BAKERY_OPTIONS.DONUT)}
-            ></button>
+          <div
+            ref={donutIcon}
+            className="w-20 h-20 sm:w-24 sm:h-24 xl:w-32 xl:h-32 sec-2"
+            onClick={() => selectIcon(BAKERY_OPTIONS.DONUT)}
+          >
+            <DonutIcon />
           </div>
-          <div className="w-1/4 h-full bg-red">
-            <button
-              className="w-full h-full bg-black"
-              onClick={() => selectIcon(BAKERY_OPTIONS.PIE)}
-            ></button>
+          <div
+            ref={pieIcon}
+            className="w-20 h-20 sm:w-24 sm:h-24 xl:w-32 xl:h-32 sec-2"
+            onClick={() => selectIcon(BAKERY_OPTIONS.PIE)}
+          >
+            <PieIcon />
           </div>
         </div>
 
